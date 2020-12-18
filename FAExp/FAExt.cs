@@ -21,7 +21,8 @@ namespace FAExp
             Execute.Assertion
                 .ForCondition(numAssert.Subject.IsSameOrEqualTo(expected))
                 //.BecauseOf(because, becauseArgs)
-                .FailWith(fail, failArgs);
+                .FailWith("{context:value} cippa lippa {0}",12);
+                //.FailWith(fail, failArgs);
             
             return new AndConstraint<NumericAssertions<T>>((NumericAssertions<T>)numAssert);
         }

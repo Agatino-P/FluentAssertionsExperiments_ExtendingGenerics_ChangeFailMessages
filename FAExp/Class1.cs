@@ -16,8 +16,8 @@ namespace FAExp
         {
             int a = 1;
             int b = 2;
-            a.Should().Be2(b, $"{nameof(a)}={a}, != {nameof(b)}={b}");
             a.Should().Be(b,"*{0}={1}*", nameof(b),b);
+            a.Should().Be2(b, $"{nameof(a)}={a}, != {nameof(b)}={b}");
             a.Should().Be(b);
         }
     }
